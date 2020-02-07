@@ -1,12 +1,14 @@
 body {
   margin: 0px;
 }
+
 header {
   display: flex;
   height: 105px;
   flex-flow: row wrap;
   align-items: center;
 }
+
 .header__base {
   width: 320px;
   height: 60px;
@@ -63,6 +65,7 @@ header {
   color: #ffffff;
   padding: 10px;
 }
+
 .header__hero {
   height: 711px;
   width: 320px;
@@ -123,7 +126,8 @@ header {
 }
 
 .rectangle-equipo {
-  background-color: red; /* #ffffff;  */
+  background-color: red;
+  /* #ffffff;  */
   width: 30px;
   height: 30px;
   transform: rotate(45deg);
@@ -138,8 +142,9 @@ header {
 .adalabers {
   position: absolute;
   top: 1504px;
-  width: 320px;
+  width: 320px;/home/mariajose/Documentos/proyect-promoI-module1-team1-morning/index.html
 }
+
 .MariaJose h2 {
   font-family: "Rubik", sans-serif;
   font-size: 24px;
@@ -185,4 +190,40 @@ i {
 .redes {
   display: flex;
   justify-content: center;
+}
+
+
+.Gloria h2 {
+  font-family: "Rubik", sans-serif;
+  font-size: 24px;
+  color: #099d8d;
+}
+
+.Gloria img {
+  width: 180px;
+  height: 180px;
+
+}
+
+.Gloria p {
+  font-weight: "Open Sans", sans-serif;
+  font-size: 16px;
+  color: #54585a;
+}
+
+.Marta img {
+
+  width: 180px;
+  height: 180px;
+}
+
+.Belen img {
+
+  width: 180px;
+  height: 180px;
+}
+
+.Cristina img {
+  width: 180px;
+  height: 180px;
 }
