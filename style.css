@@ -1,17 +1,16 @@
 body {
   margin: 0px;
-<<<<<<< HEAD
-
-=======
-  
->>>>>>> 6192ec310f944af348dc71143cbb9563e604525b
+}
+.base__container {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
 }
 
-header {
-  display: flex;
-  height: 105px;
-  flex-flow: row wrap;
-  align-items: center;
+.header__container {
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .header__base {
@@ -72,8 +71,8 @@ header {
 }
 
 .header__hero {
-
   width: 320px;
+  position: relative;
   display: flex;
   justify-content: center;
 }
@@ -109,7 +108,7 @@ header {
   margin: 0;
   padding: 0;
 }
-
+/*
 .section-equipo {
   padding: 30px 15px;
   width: 320px;
@@ -125,34 +124,42 @@ header {
 
 .equipo-p {
   opacity: 0.67;
-  font-family: 'Open Sans', "Helvetica Neue", sans-serif;
+  font-family: "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 16px;
   color: #54585a;
 }
 
 .rectangle-equipo {
   background-color: red;
-  /* #ffffff;  */
+  /* #ffffff;  
   width: 30px;
   height: 30px;
   transform: rotate(45deg);
   position: relative;
   top: 488.2px;
 }
-
+*/
 .section-fortal {
   background-color: gray;
 }
 
 .adalabers {
-  position: absolute;
+  position: relative;
   width: 320px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-
+.MariaJose {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .MariaJose h2 {
-  font-family: 'Rubik', sans-serif;
+  font-family: "Rubik", sans-serif;
   font-size: 24px;
   color: #099d8d;
+  display: flex;
 }
 
 .MariaJose img {
@@ -163,11 +170,10 @@ header {
 .MariaJose h3 {
   font-weight: "Open Sans", sans-serif;
   font-size: 20px;
+  display: flex;
 }
 
 .profile-description {
-  display: flex;
-  justify-content: center;
   text-align: center;
   color: #54585a;
 }
@@ -193,20 +199,143 @@ i {
 }
 
 .redes {
-  display: flex;
-  justify-content: center;
 }
 
+.Gloria {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Gloria h2 {
+  font-family: "Rubik", sans-serif;
+  font-size: 24px;
+  color: #099d8d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.Gloria img {
+  width: 180px;
+  height: 180px;
+  display: flex;
+}
+
+.Gloria p {
+  font-weight: "Open Sans", sans-serif;
+  font-size: 16px;
+  color: #54585a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.Marta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Marta h2 {
+  font-family: "Rubik", sans-serif;
+  font-size: 24px;
+  color: #099d8d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.Marta img {
+  width: 180px;
+  height: 180px;
+  display: flex;
+}
+
+.Marta p {
+  font-weight: "Open Sans", sans-serif;
+  font-size: 16px;
+  color: #54585a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.Belen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Belen h2 {
+  font-family: "Rubik", sans-serif;
+  font-size: 24px;
+  color: #099d8d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.Belen img {
+  width: 180px;
+  height: 180px;
+  display: flex;
+}
+
+.Belen p {
+  font-weight: "Open Sans", sans-serif;
+  font-size: 16px;
+  color: #54585a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.Cristina {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Cristina h2 {
+  font-family: "Rubik", sans-serif;
+  font-size: 24px;
+  color: #099d8d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.Cristina img {
+  width: 180px;
+  height: 180px;
+  display: flex;
+}
+
+.Cristina p {
+  font-weight: "Open Sans", sans-serif;
+  font-size: 16px;
+  color: #54585a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
 /* FOOTER */
 .footer__box {
   height: 250px;
   width: 320px;
   background-color: white;
-  border-top: 1px #b8b8b9;
+  border-top: 1px solid #b8b8b9;
   display: flex;
   flex-direction: column;
   margin: 0;
   align-items: center;
+  position: relative;
 }
 .footer__item__equipo,
 .footer__item__quienes,
@@ -252,47 +381,3 @@ i {
   height: 42px;
   margin-top: 30px;
 }
-
-.Gloria h2 {
-  font-family: "Rubik", sans-serif;
-  font-size: 24px;
-  color: #099d8d;
-}
-
-.Gloria img {
-  width: 180px;
-  height: 180px;
-
-}
-
-.Gloria p {
-  font-weight: "Open Sans", sans-serif;
-  font-size: 16px;
-  color: #54585a;
-}
-
-.Marta img {
-
-  width: 180px;
-  height: 180px;
-}
-
-.Belen img {
-
-  width: 180px;
-  height: 180px;
-}
-
-.Cristina img {
-  width: 180px;
-  height: 180px;
-}
-<<<<<<< HEAD
-
-.main {
-  display: flex;
-  flex-direction: column;
-
-}
-=======
->>>>>>> 6192ec310f944af348dc71143cbb9563e604525b
