@@ -23,18 +23,19 @@
                 <div class="rectangle">
                     <ul class="lista">
                         <li><a class="link_header" href=#enlace-a-equipo>Equipo</a></li>
-                        <li><a class="link_header" href="#">Quienes somos</a></li>
+                        <li><a class="link_header" href="#enlace-a-quienes-somos">Quienes somos</a></li>
                         <li><a class="link_header" href="#">Contacto</a></li>
                     </ul>
                 </div>
             </div>
             <div class="header__hero">
-                <div class="hero__image"></div>
-                <div class="group__name">
-                    <h3>Code-fiction slogan</h3>
+                <div id="top" class="hero__image"></div>
+                <div class= "group-container group__name">
+                    <h3 id="enlace-a-equipo">No hay código imposible</h3>
+                </div>
         </header>
         <main>
-            <div class="equipo__container">
+            <div class="group-container equipo__container">
                 <section class="section-equipo">
                     <h2 class="equipo-section-title">EQUIPO</h2>
                     <p class="equipo-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi facilis sequi
@@ -47,7 +48,7 @@
                     <div class="rectangle-equipo"></div>
                 </section>
             </div>
-            <section class="section-fortaleza">
+            <section class="group-container section-fortaleza">
                 <div>
                     <p class="header-forta">Fortalezas</p>
                     <p class="div-forta">Resiliencia, tenacidad, y responsabilidad son algunas de las características de
@@ -56,15 +57,15 @@
                         falta.</p>
                 </div>
                 <div>
-                    <p class="header-forta1">Debilidades</p>
+                    <p id="enlace-a-quienes-somos" class="header-forta1">Debilidades</p>
                     <p class="div-forta">La única debilidad del grupo son la perfección en el trabajo diario, y las
                         ganas de poner en marcha tecnología digital al servicio de los usuarios que la necesiten.</p>
                 </div>
             </section>
 
     </div class="equipo__container">
-    <section class="adalabers">
-        <h2 id="enlace-a-equipo" class="quienes">QUIÉNES SOMOS</h2>
+    <section class="group-container adalabers">
+        <h2 class="quienes">QUIÉNES SOMOS</h2>
         <div class="profile MariaJose">
 
             <img src="https://www.fundacioorienta.com/wp-content/uploads/2015/07/Testimonis-silueta-pare.png"
@@ -253,12 +254,13 @@
             </div>
         </div>
     </section>
-    </div>
+    <!-- </div>  -->
     </main>
     </div>
     </section>
     <footer class="footer__box">
-        <h5 class="footer__text">Code-fiction © 2020</h5>
+        
+        <a href="#top" title="Back to the top" > <h5 class="footer__text">Code-fiction © 2020</h5></a>
         <nav>
             <ul class="footer__list">
                 <li><a class="footer__item__equipo" href="#enlace-a-equipo">EQUIPO</a></li>
@@ -266,7 +268,7 @@
                 <li><a class="footer__item__contacto" href="#">CONTACTO</a></li>
             </ul>
         </nav>
-        <img class="imagen__logo" src="./imagen__logo.png" alt="Adalab" />
+        <a href="https://adalab.es/" target="_black"> <img class="imagen__logo" src="./imagen__logo.png" alt="Adalab" />
     </footer>
 
 </body>
