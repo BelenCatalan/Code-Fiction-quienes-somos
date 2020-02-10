@@ -118,8 +118,9 @@ header {
   font-size: 24px;
   color: #14d9c4;
   text-align: center;
-  position: relative;
-  top: 467px;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
 }
 
 .equipo-p {
@@ -130,13 +131,12 @@ header {
 }
 
 .rectangle-equipo {
-  background-color: red;
-  /* #ffffff;  */
+  background-color: #ffffff;
   width: 30px;
   height: 30px;
   transform: rotate(45deg);
   position: relative;
-  top: 488.2px;
+  bottom: -15px;
 }
 
 .section-fortal {
