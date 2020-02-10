@@ -94,7 +94,7 @@ header {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    padding-top: 30px;
+
 
 }
 
@@ -166,6 +166,7 @@ header {
     font-size: 22px;
     color: #54585a;
     text-align: center;
+    box-sizing: border-box;
 }
 
 
