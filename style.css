@@ -1,16 +1,14 @@
 body {
   margin: 0px;
-}
-.base__container {
-  display: flex;
-  flex-direction: column;
-  align-content: center;
+
+  
 }
 
-.header__container {
-  position: fixed;
-  top: 0;
-  left: 0;
+header {
+  display: flex;
+  height: 105px;
+  flex-flow: row wrap;
+  align-items: center;
 }
 
 .header__base {
@@ -26,10 +24,10 @@ body {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  /* z-index: 1; */
-  /* position: absolute; */
-  /* top: 0px; */
-  /* left: 0px; */
+  z-index: 1;
+  position: absolute;
+  top: 0px;
+  left: 0px;
 }
 
 .rectangle {
@@ -44,9 +42,9 @@ body {
   align-items: center;
   box-sizing: border-box;
   z-index: 1;
-  /* position: absolute; */
-  /* top: 60px; */
-  /* left: 0px; */
+  position: absolute;
+  top: 60px;
+  left: 0px;
 }
 
 .header__base,
@@ -71,8 +69,8 @@ body {
 }
 
 .header__hero {
+
   width: 320px;
-  /* position: relative; */
   display: flex;
   justify-content: center;
 }
@@ -108,7 +106,9 @@ body {
   margin: 0;
   padding: 0;
 }
-/*
+
+/* EQUIPO */
+
 .section-equipo {
   padding: 30px 15px;
   width: 320px;
@@ -124,42 +124,34 @@ body {
 
 .equipo-p {
   opacity: 0.67;
-  font-family: "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: 'Open Sans', "Helvetica Neue", sans-serif;
   font-size: 16px;
   color: #54585a;
 }
 
 .rectangle-equipo {
   background-color: red;
-  /* #ffffff;  
+  /* #ffffff;  */
   width: 30px;
   height: 30px;
   transform: rotate(45deg);
   position: relative;
   top: 488.2px;
 }
-*/
+
 .section-fortal {
   background-color: gray;
 }
 
 .adalabers {
-  position: relative;
+  position: absolute;
   width: 320px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
-.MariaJose {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
+
 .MariaJose h2 {
-  font-family: "Rubik", sans-serif;
+  font-family: 'Rubik', sans-serif;
   font-size: 24px;
   color: #099d8d;
-  display: flex;
 }
 
 .MariaJose img {
@@ -170,10 +162,11 @@ body {
 .MariaJose h3 {
   font-weight: "Open Sans", sans-serif;
   font-size: 20px;
-  display: flex;
 }
 
 .profile-description {
+  display: flex;
+  justify-content: center;
   text-align: center;
   color: #54585a;
 }
@@ -198,141 +191,21 @@ i {
   color: #099d8d;
 }
 
-.Gloria {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.Gloria h2 {
-  font-family: "Rubik", sans-serif;
-  font-size: 24px;
-  color: #099d8d;
+.redes {
   display: flex;
   justify-content: center;
-  align-items: center;
-  position: relative;
 }
 
-.Gloria img {
-  width: 180px;
-  height: 180px;
-  display: flex;
-}
-
-.Gloria p {
-  font-weight: "Open Sans", sans-serif;
-  font-size: 16px;
-  color: #54585a;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-}
-.Marta {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.Marta h2 {
-  font-family: "Rubik", sans-serif;
-  font-size: 24px;
-  color: #099d8d;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-}
-
-.Marta img {
-  width: 180px;
-  height: 180px;
-  display: flex;
-}
-
-.Marta p {
-  font-weight: "Open Sans", sans-serif;
-  font-size: 16px;
-  color: #54585a;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-}
-.Belen {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.Belen h2 {
-  font-family: "Rubik", sans-serif;
-  font-size: 24px;
-  color: #099d8d;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-}
-
-.Belen img {
-  width: 180px;
-  height: 180px;
-  display: flex;
-}
-
-.Belen p {
-  font-weight: "Open Sans", sans-serif;
-  font-size: 16px;
-  color: #54585a;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-}
-.Cristina {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.Cristina h2 {
-  font-family: "Rubik", sans-serif;
-  font-size: 24px;
-  color: #099d8d;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-}
-
-.Cristina img {
-  width: 180px;
-  height: 180px;
-  display: flex;
-}
-
-.Cristina p {
-  font-weight: "Open Sans", sans-serif;
-  font-size: 16px;
-  color: #54585a;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-}
 /* FOOTER */
 .footer__box {
   height: 250px;
   width: 320px;
   background-color: white;
-  border-top: 1px solid #b8b8b9;
+  border-top: 1px #b8b8b9;
   display: flex;
   flex-direction: column;
   margin: 0;
   align-items: center;
-  position: relative;
 }
 .footer__item__equipo,
 .footer__item__quienes,
@@ -343,7 +216,6 @@ i {
   color: #54585a;
   display: flex;
   justify-content: center;
-  list-style: none;
 }
 
 .footer__text {
@@ -356,7 +228,6 @@ i {
   padding: 0;
   display: flex;
   justify-content: center;
-  list-style: none;
 }
 
 .footer__logo {
@@ -367,16 +238,11 @@ i {
 .footer__list {
   margin: 0;
   padding: 0;
-  /* list-style: none; */
+  list-style: none;
   font-size: 14px;
   line-height: 1.43;
   font-family: "opensans" "semibold";
   color: #54585a;
-  list-style: none;
-}
-
-.footer__list a {
-  text-decoration: none;
 }
 
 .imagen__logo {
@@ -385,3 +251,47 @@ i {
   height: 42px;
   margin-top: 30px;
 }
+
+.Gloria h2 {
+  font-family: "Rubik", sans-serif;
+  font-size: 24px;
+  color: #099d8d;
+}
+
+.Gloria img {
+  width: 180px;
+  height: 180px;
+
+}
+
+.Gloria p {
+  font-weight: "Open Sans", sans-serif;
+  font-size: 16px;
+  color: #54585a;
+}
+
+.Marta img {
+
+  width: 180px;
+  height: 180px;
+}
+
+.Belen img {
+
+  width: 180px;
+  height: 180px;
+}
+
+.Cristina img {
+  width: 180px;
+  height: 180px;
+}
+<<<<<<< HEAD
+
+.main {
+  display: flex;
+  flex-direction: column;
+
+}
+=======
+>>>>>>> 6192ec310f944af348dc71143cbb9563e604525b
