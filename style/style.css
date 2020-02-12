@@ -18,6 +18,7 @@ header {
 .header__container {
   position: fixed;
   width: 100%;
+  z-index: 3;
 }
 
 .header__base {
@@ -33,11 +34,18 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  z-index: 10;
+}
+
+.header__base a {
+  text-decoration: none;
+  color: #fff;
 }
 
 .rectangle {
   width: 100%;
   height: 45px;
+  opacity: 0.9;
   background-color: #14d9c4;
   font-family: "Rubik", sans-serif;
   font-size: 15px;
@@ -46,7 +54,7 @@ header {
 
 .header__base,
 .rectangle {
-  opacity: 0.8;
+  header opacity: 0.8;
 }
 
 .lista {
@@ -177,6 +185,7 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 0 20px;
 }
 
 .quienes {
@@ -184,7 +193,8 @@ header {
   font-size: 24px;
   color: #099d8d;
   display: flex;
-  padding-top: 40px;
+  margin-bottom: 40px;
+  margin-top: 40px;
 }
 
 .profile {
@@ -197,7 +207,9 @@ header {
   display: flex;
   flex-direction: column;
   margin: 0 auto;
-  border-radius: 2px grey solid;
+  border: 5px rgb(190, 181, 181) solid;
+  border-radius: 4px;
+
 }
 
 .profile h3 {
@@ -279,6 +291,15 @@ i {
 .footer__logo {
   width: 115.9px;
   height: 42px;
+}
+
+.footer__text {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  color: #b8b8b9;
+  margin-top: 30px;
+  text-decoration: none;
 }
 
 .footer__list {
