@@ -54,7 +54,7 @@ header {
 
 .header__base,
 .rectangle {
-  header opacity: 0.8;
+  headeropacity: 0.8;
 }
 
 .lista {
@@ -209,7 +209,6 @@ header {
   margin: 0 auto;
   border: 5px rgb(190, 181, 181) solid;
   border-radius: 4px;
-
 }
 
 .profile h3 {
