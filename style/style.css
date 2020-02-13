@@ -1,25 +1,5 @@
 * {
   margin: 0px;
-}
-
-/* SLOGAN  */
-.slogan-container {
-  box-sizing: border-box;
-  margin: 0 15px;
-  padding: 15px 14px 15px 16px;
-  height: 80px;
-  width: 80%;
-  background-color: white;
-  font-family: "Open Sans", "semibold", sans-serif;
-  font-size: 18px;
-  color: black;
-  text-align: center;
-  z-index: 50;
-  border: 2px solid red;
-}
-
-.slogan-title {
-  margin: 15px 14px 15px 16px;
   padding: 0;
   box-sizing: border-box;
 }
@@ -74,11 +54,7 @@ header {
 
 .header__base,
 .rectangle {
-<<<<<<< HEAD
   opacity: 0.8;
-=======
-  headeropacity: 0.8;
->>>>>>> e397cbc84afc047faf72473b3260b3a488103d78
 }
 
 .lista {
@@ -92,7 +68,6 @@ header {
 .link_header {
   text-decoration: none;
   color: #ffffff;
-  padding: 10px;
 }
 
 .header__hero {
@@ -111,7 +86,7 @@ header {
   background-repeat: no-repeat;
 }
 
-/* .group__name {
+.group__name {
   height: 80px;
   width: 80%;
   background-color: white;
@@ -124,14 +99,12 @@ header {
   font-size: 18px;
   color: black;
   margin: 0 auto;
-}*/
+}
 
 .main {
   display: flex;
   flex-direction: column;
 }
-
-/* EQUIPO */
 
 .equipo {
   width: 100%;
