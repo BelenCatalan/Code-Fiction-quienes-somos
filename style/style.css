@@ -1,7 +1,6 @@
 * {
   margin: 0px;
   padding: 0;
-  box-sizing: border-box;
 }
 
 header {
@@ -54,7 +53,7 @@ header {
 
 .header__base,
 .rectangle {
-  header opacity: 0.8;
+  headeropacity: 0.8;
 }
 
 .lista {
@@ -209,7 +208,6 @@ header {
   margin: 0 auto;
   border: 5px rgb(190, 181, 181) solid;
   border-radius: 4px;
-
 }
 
 .profile h3 {
@@ -406,9 +404,34 @@ i {
   h2.quienes {
     margin: 30px;
   }
-
   .footer__box {
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;
+  }
+  .footer__list {
+    position: absolute;
+    top: 24px;
+    right: 45px;
+    line-height: 30px;
+    align-items: flex-end;
+  }
+  .footer__text {
+    display: flex;
+    justify-content: left;
+    position: relative;
+    left: 45px;
+  }
+  .imagen__logo {
+    display: inline;
+    position: absolute;
+    top: 65px;
+    left: 45px;
+    margin: 0;
+    margin-bottom: 60px;
+  }
+  .footer__item__equipo,
+  .footer__item__quienes,
+  .footer__item__contacto {
+    line-height: 2;
   }
 }
