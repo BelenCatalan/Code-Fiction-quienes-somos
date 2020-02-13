@@ -1,4 +1,4 @@
-body {
+* {
   margin: 0px;
 }
 
@@ -6,7 +6,7 @@ body {
 .slogan-container {
   box-sizing: border-box;
   margin: 0 15px;
-  /* padding: 15px 14px 15px 16px; */
+  padding: 15px 14px 15px 16px;
   height: 80px;
   width: 80%;
   background-color: white;
@@ -20,14 +20,13 @@ body {
 
 .slogan-title {
   margin: 15px 14px 15px 16px;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 header {
   width: 100%;
   height: 100%;
-  display: flex;
-  flex-flow: row wrap;
-  align-items: center;
 }
 
 .base__container {
@@ -38,10 +37,8 @@ header {
 
 .header__container {
   position: fixed;
-  z-index: 55;
-  top: 0;
-  left: 0;
   width: 100%;
+  z-index: 3;
 }
 
 .header__base {
@@ -60,6 +57,11 @@ header {
   z-index: 10;
 }
 
+.header__base a {
+  text-decoration: none;
+  color: #fff;
+}
+
 .rectangle {
   width: 100%;
   height: 45px;
@@ -68,10 +70,6 @@ header {
   font-family: "Rubik", sans-serif;
   font-size: 15px;
   text-transform: uppercase;
-  text-align: center;
-  align-items: center;
-  box-sizing: border-box;
-  z-index: 10;
 }
 
 .header__base,
@@ -80,8 +78,6 @@ header {
 }
 
 .lista {
-  margin: 0px;
-  padding: 0px;
   list-style: none;
   height: 100%;
   display: flex;
@@ -104,7 +100,7 @@ header {
 
 .hero__image {
   width: 100%;
-  height: 66.1vh;
+  height: 100vh;
   background-image: url("../images/codefiction.jpeg");
   background-position: center;
   background-size: cover;
@@ -119,7 +115,6 @@ header {
   justify-content: center;
   align-items: center;
   position: relative;
-  z-index: 50;
   top: -10vh;
   font-family: "Open Sans", "semibold", sans-serif;
   font-size: 18px;
@@ -146,6 +141,8 @@ header {
   background-color: #ffffff;
   font-family: "Rubik", sans-serif;
   font-size: 24px;
+  margin: 0px;
+  padding: 0px;
   color: #14d9c4;
   text-align: center;
   margin: 0 auto;
@@ -210,6 +207,7 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 0 20px;
 }
 
 .quienes {
@@ -217,7 +215,8 @@ header {
   font-size: 24px;
   color: #099d8d;
   display: flex;
-  padding-top: 40px;
+  margin-bottom: 40px;
+  margin-top: 40px;
 }
 
 .profile {
@@ -230,7 +229,8 @@ header {
   display: flex;
   flex-direction: column;
   margin: 0 auto;
-  border-radius: 2px grey solid;
+  border: 5px rgb(190, 181, 181) solid;
+  border-radius: 4px;
 }
 
 .profile h3 {
@@ -272,9 +272,13 @@ i {
 
 /* FOOTER */
 .footer__box {
+  height: 100%;
+  width: 100%;
   background-color: white;
+  border-top: 1px #b8b8b9;
   display: flex;
   flex-direction: column;
+  margin: 0;
   align-items: center;
   border-top: 1px solid #b8b8b9;
   position: relative;
@@ -298,14 +302,34 @@ i {
   font-weight: normal;
   color: #b8b8b9;
   margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.footer__text {
   text-decoration: none;
 }
+
+.footer__logo {
+  width: 115.9px;
+  height: 42px;
+}
+
+.footer__text {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  color: #b8b8b9;
+  margin-top: 30px;
+  text-decoration: none;
+}
+
 .footer__list {
   padding: 0;
   list-style: none;
   font-size: 14px;
   line-height: 1.43;
   font-family: "Open Sans", sans-serif;
+  font-weight: 500;
   display: flex;
   flex-direction: column;
   color: #54585a;
