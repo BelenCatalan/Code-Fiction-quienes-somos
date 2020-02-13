@@ -74,7 +74,11 @@ header {
 
 .header__base,
 .rectangle {
+<<<<<<< HEAD
   opacity: 0.8;
+=======
+  headeropacity: 0.8;
+>>>>>>> e397cbc84afc047faf72473b3260b3a488103d78
 }
 
 .lista {
