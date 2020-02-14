@@ -1,7 +1,6 @@
 * {
   margin: 0px;
   padding: 0;
-  box-sizing: border-box;
 }
 
 header {
@@ -403,9 +402,29 @@ i {
   h2.quienes {
     margin: 30px;
   }
-
   .footer__box {
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;
+  }
+  .footer__list {
+    position: absolute;
+    top: 24px;
+    right: 45px;
+    line-height: 30px;
+    align-items: flex-end;
+  }
+  .footer__text {
+    display: flex;
+    justify-content: left;
+    position: relative;
+    left: 45px;
+  }
+  .imagen__logo {
+    display: inline;
+    position: absolute;
+    top: 65px;
+    left: 45px;
+    margin: 0;
+    margin-bottom: 60px;
   }
 }
