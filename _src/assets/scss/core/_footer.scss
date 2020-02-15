@@ -1,0 +1,95 @@
+/* FOOTER */
+.footer {
+  &__box {
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    border-top: 1px #b8b8b9;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    align-items: center;
+    border-top: 1px solid #b8b8b9;
+    position: relative;
+  }
+  &__item {
+    &__equipo,
+    &__quienes,
+    &__contacto {
+      font-size: 14px;
+      line-height: 1.43;
+      font-family: "Open Sans", sans-serif;
+      color: #54585a;
+      display: flex;
+      justify-content: center;
+      text-decoration: none;
+    }
+
+    &__group {
+      font-family: "Open Sans", sans-serif;
+      font-size: 14px;
+      font-weight: normal;
+      color: #b8b8b9;
+      margin-top: 30px;
+      margin-bottom: 20px;
+    }
+
+    &__text {
+      font-family: "Open Sans", sans-serif;
+      font-size: 14px;
+      font-weight: normal;
+      color: #b8b8b9;
+      text-decoration: none;
+    }
+
+    &__list {
+      padding: 0;
+      list-style: none;
+      font-size: 14px;
+      line-height: 1.3px;
+      font-family: "Open Sans", sans-serif;
+      font-weight: 500;
+      display: flex;
+      flex-direction: column;
+      color: #54585a;
+      margin-top: 20px;
+      margin-bottom: 30px;
+    }
+
+    &__image {
+      display: inline-block;
+      width: 115.9px;
+      height: 42px;
+      margin-bottom: 45px;
+    }
+  }
+}
+
+@media all and (min-width: 768px) {
+  .footer {
+    &__box {
+      flex-direction: row;
+    }
+    &__list {
+      position: absolute;
+      top: 24px;
+      right: 45px;
+      line-height: 30px;
+      align-items: flex-end;
+    }
+    &__text {
+      display: flex;
+      justify-content: left;
+      position: relative;
+      left: 45px;
+    }
+    &__image {
+      display: inline;
+      position: absolute;
+      top: 65px;
+      left: 45px;
+      margin: 0;
+      margin-bottom: 60px;
+    }
+  }
+}
