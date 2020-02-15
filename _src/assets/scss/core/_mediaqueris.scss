@@ -1,0 +1,45 @@
+@media all and (min-width: 768px) {
+
+
+    .profile {
+        display: flex;
+
+        h3,
+        p {
+
+            text-align: left;
+            padding-left: 0;
+            margin-left: 20px;
+            padding-top: 10px;
+            padding-bottom: 15px;
+        }
+    }
+
+    .profile:nth-child(odd) {
+        flex-direction: row-reverse;
+
+        .profile:nth-child(odd) h3,
+        .profile:nth-child(odd) p {
+            text-align: right;
+            padding-right: 0;
+            padding-top: 10px;
+            padding-bottom: 15px;
+            margin-right: 20px;
+        }
+
+        .profile:nth-child(odd) .redes {
+            justify-content: flex-end;
+            margin-right: 20px;
+        }
+    }
+
+
+    .redes {
+        justify-content: flex-start;
+        margin-left: 20px;
+    }
+
+    h2.quienes {
+        margin: 30px;
+    }
+}
