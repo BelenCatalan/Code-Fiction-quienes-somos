@@ -1,45 +1,69 @@
 @media (min-width: 768px) {
 
 
-    .adalabers {
+    .adalabers__container {
         display: flex;
         flex-direction: column;
-        justify-content: flex-end;
-        align-items: flex-end;
+        margin: 0px 45px;
+
+    }
+
+
+    .adalabers__profile {
+
+
+        display: flex;
+
+        p,
+        h3 {
+            text-align: left;
+        }
+
+        .redes {
+
+            justify-content: flex-start;
+        }
+
+    }
+
+
+
+
+    .adalabers__profile:nth-child(odd) {
+        flex-direction: row-reverse;
 
         h3,
-        p {
-
-            text-align: left;
-            padding-left: 0;
-            margin-left: 20px;
+        p,
+        i {
+            text-align: right;
+            padding-right: 0;
             padding-top: 10px;
             padding-bottom: 15px;
+            margin-right: 20px;
         }
+
+        .redes {
+
+            justify-content: flex-end;
+        }
+
+        .redes i {
+
+            margin-right: 20px;
+        }
+
+
     }
+}
 
 
+@media (min-width: 1000px) {
 
 
-    .adalabers__profile:nth-child(odd) h3,
-    .adalabers__profile:nth-child(odd) p {
-        text-align: right;
-        padding-right: 0;
-        padding-top: 10px;
-        padding-bottom: 15px;
-        margin-right: 20px;
-    }
+    .adalabers__container {
 
-    .adalabers__profile:nth-child(odd) .redes {
-        justify-content: flex-end;
-        margin-right: 20px;
-    }
+        margin: 0px 55px;
 
-
-
-    .redes {
-        justify-content: flex-start;
-        margin-left: 20px;
     }
 
 
