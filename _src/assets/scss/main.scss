@@ -2,7 +2,7 @@
   margin: 0px;
   padding: 0;
 }
-@import "./core/footer";
+
 header {
   width: 100%;
   height: 100%;
@@ -329,3 +329,4 @@ i {
     margin: 30px;
   }
 }
+@import "./core/_footer.scss";
