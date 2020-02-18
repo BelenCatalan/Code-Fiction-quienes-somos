@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../../assets/scss/core/_form.scss">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="header__container">
+            <div class="header__base">
+                <a href="#">Code fiction</a>
+            </div>
+            <div class="rectangle">
+                <ul class="lista">
+                    <li><a class="link_header" href=#enlace-a-equipo>Equipo</a></li>
+                    <li><a class="link_header" href="#enlace-a-quienes-somos">Quienes somos</a></li>
+                    <li><a class="link_header" href="#">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="header__hero">
+            <div id="top" class="hero__image"></div>
+            <div class="slogan-container">
+                <h3 id="enlace-a-equipo" class="slogan-title">No hay código imposible</h3>
+            </div>
+        </div>
+    </header>
+    <main class="div__form">
+
+        <h2 class="contact"> Contacto</h2>
+        <p> Para cualquier duda, sugerencia, o contacto con nosotras puedes rellenar el siguiente formulario.</p>
+        <p class="obligatory"> Todos los campos marcados con * son obligatorios.</p>
+        <form class="form" action="">
+            <label for="Nombre">Nombre completo *</label>
+            <input type="text" name="nombre" id="nombre" placeholder="Nombre..." required>
+            <label for="Email">Email *</label>
+            <input type="email" name="emaiol" id="" placeholder="nombre.apellidos@mail.com" required>
+            <label for="Telefono">Teléfono</label>
+            <input type="tel" name="telefono" id="" placeholder="Ej: 123456789">
+            <label for="Mensaje">Mensaje *</label>
+            <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="¿Qué necesitas?" required></textarea>
+
+            <input class="submit" type="submit" value="enviar">
+
+
+
+
+
+        </form>
+
+
+    </main>
+
+    <footer class="footer__box">
+        <div class="footer__group">
+            <a href="#top" class="footer__text" title="Back to the top">
+                <h5>Code-fiction © 2020</h5>
+            </a>
+        </div>
+        <nav>
+            <ul class="footer__list">
+                <li><a class="footer__item__equipo" href="#enlace-a-equipo">EQUIPO</a></li>
+                <li><a class="footer__item__quienes" href="#enlace-a-quienes-somos">QUIÉNES SOMOS</a></li>
+                <li><a class="footer__item__contacto" href="#">CONTACTO</a></li>
+            </ul>
+        </nav>
+        <a href="https://adalab.es/" target="_black"> <img class="imagen__logo" src="./assets/images/imagen__logo.png"
+                alt="Adalab" />
+    </footer>
+
+</body>
+
+</html>
