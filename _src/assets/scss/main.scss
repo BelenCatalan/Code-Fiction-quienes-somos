@@ -1,10 +1,9 @@
-@import 'core/_variables';
-@import 'core/_adalabers';
-@import 'core/_mediaqueris';
-@import 'core/_reset';
-@import 'layout/_header.scss';
-@import 'layout/_footer.scss';
-
+@import "core/_variables";
+@import "core/_adalabers";
+@import "core/_mediaqueris";
+@import "core/_reset";
+@import "layout/_header.scss";
+@import "layout/_footer.scss";
 
 .main {
   display: flex;
@@ -128,5 +127,4 @@
   .fortadebi {
     flex-basis: 30%;
   }
-
 }
