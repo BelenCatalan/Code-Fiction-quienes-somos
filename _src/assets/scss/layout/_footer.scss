@@ -59,6 +59,9 @@
     }
   }
 }
+.lista__equipo {
+  margin: 0px;
+}
 
 @media all and (min-width: 768px) {
   .footer {
@@ -87,6 +90,7 @@
       &__quienes,
       &__contacto {
         line-height: 30px;
+        margin: 0px;
       }
     }
 
