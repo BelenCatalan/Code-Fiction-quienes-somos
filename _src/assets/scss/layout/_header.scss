@@ -6,7 +6,7 @@ header {
 .header__container {
   position: fixed;
   width: 100%;
-  z-index: 3;
+  z-index: 1000;
   opacity: 0.8;
 
   &__base {
@@ -127,12 +127,12 @@ header {
   }
 }
 
-
 .header__hero {
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 
 .hero__image {
@@ -142,21 +142,6 @@ header {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-}
-
-.group__name {
-  height: 80px;
-  width: 80%;
-  background-color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  top: -10vh;
-  font-family: "Open Sans", "semibold", sans-serif;
-  font-size: 18px;
-  color: black;
-  margin: 0 auto;
 }
 
 .slogan-container {
@@ -174,5 +159,6 @@ header {
   justify-content: center;
   align-items: center;
   position: relative;
-  bottom: 5vh;
+  bottom: 12vh;
+  opacity: 80%;
 }

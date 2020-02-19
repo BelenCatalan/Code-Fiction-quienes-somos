@@ -44,42 +44,12 @@
   transform: rotate(45deg);
   position: relative;
   bottom: -15px;
-  left: 50%;
+  left: 47%;
 }
 
 @media all and (min-width: 768px) {
-  .header__container {
-    display: flex;
-    justify-content: space-evenly;
-    height: 60px;
-    background: #099d8d;
-    width: 100%;
-  }
-
-  .header__base {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    padding-left: 45px;
-  }
-
   .hero__image {
     padding-top: 100px;
-  }
-
-  .rectangle {
-    background: #099d8d;
-    height: 100%;
-    margin-right: 30px;
-  }
-
-  .lista {
-    display: flex;
-    align-items: center;
-  }
-
-  .lista li {
-    margin-left: 19px;
   }
 
   .section-fortaleza {
