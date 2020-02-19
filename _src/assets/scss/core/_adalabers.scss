@@ -1,75 +1,76 @@
 .quienes {
-    font-family: "Rubik", sans-serif;
-    font-size: 24px;
-    color: $blue;
-    display: flex;
-    margin-bottom: 40px;
-    margin-top: 40px;
+  font-family: "Rubik", sans-serif;
+  font-size: 24px;
+  color: $blue;
+  display: flex;
+  margin-bottom: 40px;
+  margin-top: 40px;
+  text-transform: uppercase;
 }
 
 
 
 .adalabers__container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 0 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 20px;
 }
 
 
 
 .adalabers__profile {
-    margin: 0 0 20px 0;
+  margin: 0 0 20px 0;
 
-    img {
-        height: 180px;
-        width: 180px;
-        display: flex;
-        flex-direction: column;
-        margin: 0 auto;
-        border: 5px rgb(190, 181, 181) solid;
-        border-radius: 4px;
-    }
+  img {
+    height: 180px;
+    width: 180px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    border: 5px rgb(190, 181, 181) solid;
+    border-radius: 4px;
+  }
 
-    h3 {
-        font-family: $fontfamilyprofile;
-        font-size: 20px;
-        text-align: center;
-    }
+  h3 {
+    font-family: $fontfamilyprofile;
+    font-size: 20px;
+    text-align: center;
+  }
 
-    p {
-        font-family: $fontfamilyprofile;
-        font-size: 16px;
-        color: $grey;
-    }
+  p {
+    font-family: $fontfamilyprofile;
+    font-size: 16px;
+    color: $grey;
+  }
 
-    &-description {
+  &-description {
 
-        text-align: center;
-        color: $grey;
-    }
+    text-align: center;
+    color: $grey;
+  }
 }
 
 
 .adalabers__profile__description {
 
 
-    padding: 0 25px;
-    margin: 15px 0;
-    text-align: center;
+  padding: 0 25px;
+  margin: 15px 0;
+  text-align: center;
 }
 
 
 .redes {
-    display: flex;
-    justify-content: center;
-    list-style: none;
+  display: flex;
+  justify-content: center;
+  list-style: none;
 }
 
 .redes {
-    i {
-        color: $blue;
-        margin: 10px 15px;
+  i {
+    color: $blue;
+    margin: 10px 15px;
 
-    }
+  }
 }
