@@ -270,14 +270,17 @@ header {
 
 
   input,
-  label,
-  textarea {
+  label {
 
     margin: 0 10px;
     padding: 10px;
 
   }
 
+}
+
+span {
+  color: #14d9c4;
 }
 
 .submit {
