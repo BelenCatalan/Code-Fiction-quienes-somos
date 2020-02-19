@@ -26,11 +26,15 @@
         <form class="form" action="">
           <label for="Nombre">Nombre completo <span>*</span> </label>
           <input type="text" name="nombre" id="nombre" placeholder="Nombre..." required />
-
-          <label for="Email">Email <span>*</span></label>
-          <input type="email" name="email" id="" placeholder="nombre.apellidos@mail.com" class="email" required />
-          <label for="Telefono">Teléfono</label>
-          <input type="tel" name="telefono" id="telefono" placeholder="Ej: 123456789" />
+          <div class="div__email__phone">
+            <div class="div__email">
+              <label for="Email">Email <span>*</span></label> <input type="email" name="email" id="" placeholder="nombre.apellidos@mail.com" class="email" required />
+            </div>
+            <div class="div__phone">
+              <label for="Telefono">Teléfono</label>
+              <input type="tel" name="telefono" id="telefono" placeholder="Ej: 123456789" />
+            </div>
+          </div>
           <label for="Mensaje">Mensaje <span>*</span></label>
           <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="¿Qué necesitas?" required></textarea>
 

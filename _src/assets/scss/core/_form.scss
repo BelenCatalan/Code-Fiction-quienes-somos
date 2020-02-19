@@ -168,6 +168,39 @@ header {
   }
 }
 
+@media all and (min-width: 1200px) {
+  .div__form {
+    width: 601px;
+  }
+
+  .submit {
+    right: -315px;
+  }
+  .div__email__phone {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .form input:not(:last-child) {
+    width: 100%;
+  }
+
+  .div__phone {
+    margin-left: 44px;
+    margin-top: 10px;
+    input {
+      width: 220px;
+    }
+  }
+  .div__email {
+    margin-top: 10px;
+  }
+  .div__email input {
+    width: 337px;
+  }
+}
+
 // FOOTER //
 
 .footer__box {
@@ -242,9 +275,7 @@ header {
   margin-bottom: 45px;
 }
 
-
 .introduction__container p {
-
   margin-bottom: 25px;
 }
 
@@ -255,8 +286,6 @@ header {
   font-family: "Open Sans", sans-serif;
   font-weight: bold;
   margin-bottom: 15px;
-
-
 }
 
 .obligatory {
@@ -273,18 +302,12 @@ header {
   flex-direction: column;
   font-family: "Open Sans", sans-serif;
 
-
-
   input,
   label {
-
-    margin: 0 10px;
-    padding: 10px;
-
+    margin-bottom: 10px;
+    padding: 8px;
   }
-
 }
-
 
 textarea {
   margin-bottom: 30px;
