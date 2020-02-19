@@ -163,7 +163,7 @@ header {
   justify-content: center;
   align-items: center;
   position: relative;
-  bottom: 12vh;
+  bottom: 44px;
   opacity: 80%;
 }
 
@@ -176,13 +176,13 @@ header {
 
   .slogan-container {
     margin-left: 46px;
-    bottom: 17vh;
+    bottom: 70px;
   }
 }
 
 @media all and (min-width: 1200px) {
   .slogan-container {
     margin-left: 138px;
-    bottom: 11vh;
+    bottom: 75px;
   }
 }
