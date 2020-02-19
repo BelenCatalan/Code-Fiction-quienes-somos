@@ -135,7 +135,7 @@ header {
 .hero__image {
   width: 100%;
   height: 100vh;
-  background-image: url("/images/codefiction.jpeg");
+  background-image: url("../images/codefiction.jpeg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -176,6 +176,7 @@ header {
   .submit {
     right: -315px;
   }
+
   .div__email__phone {
     display: flex;
     flex-direction: row;
@@ -189,13 +190,16 @@ header {
   .div__phone {
     margin-left: 44px;
     margin-top: 10px;
+
     input {
       width: 220px;
     }
   }
+
   .div__email {
     margin-top: 10px;
   }
+
   .div__email input {
     width: 337px;
   }

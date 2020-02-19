@@ -1,46 +1,67 @@
 @media (min-width: 768px) {
 
 
-    .adalabers {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
-        align-items: flex-end;
+  .adalabers__container {
+    display: flex;
+    flex-direction: column;
+    margin: 0px 45px;
 
-        h3,
-        p {
+  }
 
-            text-align: left;
-            padding-left: 0;
-            margin-left: 20px;
-            padding-top: 10px;
-            padding-bottom: 15px;
-        }
+
+  .adalabers__profile {
+    display: flex;
+
+    p,
+    h3 {
+      text-align: left;
+      padding-bottom: 5px;
     }
-
-
-
-
-    .adalabers__profile:nth-child(odd) h3,
-    .adalabers__profile:nth-child(odd) p {
-        text-align: right;
-        padding-right: 0;
-        padding-top: 10px;
-        padding-bottom: 15px;
-        margin-right: 20px;
-    }
-
-    .adalabers__profile:nth-child(odd) .redes {
-        justify-content: flex-end;
-        margin-right: 20px;
-    }
-
-
 
     .redes {
-        justify-content: flex-start;
-        margin-left: 20px;
+
+      justify-content: flex-start;
     }
 
+    img {
 
+      width: 278px;
+      height: 200px;
+    }
+
+  }
+
+  .adalabers__profile:nth-child(odd) {
+    flex-direction: row-reverse;
+
+    h3,
+    p,
+    li {
+      text-align: right;
+      padding-right: 0;
+      padding-top: 10px;
+      margin-right: 0px;
+    }
+
+    .redes {
+
+      justify-content: flex-end;
+    }
+
+    .redes i {
+
+      margin-right: 20px;
+    }
+  }
+}
+
+
+@media (min-width: 1000px) {
+
+
+  .adalabers__container {
+
+    margin: 0px 138px;
+
+  }
 }
