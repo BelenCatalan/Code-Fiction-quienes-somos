@@ -8,16 +8,12 @@
   text-transform: uppercase;
 }
 
-
-
 .adalabers__container {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: 0 20px;
 }
-
-
 
 .adalabers__profile {
   margin: 0 0 20px 0;
@@ -45,32 +41,33 @@
   }
 
   &-description {
-
     text-align: center;
     color: $grey;
   }
 }
 
-
 .adalabers__profile__description {
-
-
   padding: 0 25px;
   margin: 15px 0;
   text-align: center;
 }
 
+li {
+  margin: 15px;
+  color: $blue;
+}
 
 .redes {
   display: flex;
   justify-content: center;
-  list-style: none;
 }
 
 .redes {
   i {
     color: $blue;
-    margin: 10px 15px;
-
   }
+}
+
+.icon__twitter {
+  list-style: none;
 }
