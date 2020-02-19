@@ -309,6 +309,15 @@ header {
   }
 }
 
+.div__form {
+  display: flex;
+  flex-direction: column;
+}
+
+.div__email__phone input {
+  width: 100%;
+}
+
 textarea {
   margin-bottom: 30px;
 }
@@ -326,4 +335,5 @@ span {
   background-color: #099d8d;
   color: #fff;
   font-family: "Open Sans", sans-serif;
+  width: 100%;
 }
