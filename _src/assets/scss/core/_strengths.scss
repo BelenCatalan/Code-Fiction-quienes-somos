@@ -49,15 +49,15 @@
       margin: 0px 22.5px 60px 0px;
     }
 
-
-    &--margin {
+    & --margin {
       margin: 0px 0px 45px 0px;
-    
-    @media all and (min-width: 768px) {
-      margin: 0px 0px 60px 15px;
-    }
-    @media all and (min-width: 1280px) {
-      margin: 0px 0px 60px 22.5px;
+
+      @media all and (min-width: 768px) {
+        margin: 0px 0px 60px 15px;
+      }
+      @media all and (min-width: 1280px) {
+        margin: 0px 0px 60px 22.5px;
+      }
     }
   }
 }
