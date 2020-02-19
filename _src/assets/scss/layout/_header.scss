@@ -145,21 +145,6 @@ header {
   background-repeat: no-repeat;
 }
 
-.group__name {
-  height: 80px;
-  width: 80%;
-  background-color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  top: -10vh;
-  font-family: "Open Sans", "semibold", sans-serif;
-  font-size: 18px;
-  color: black;
-  margin: 0 auto;
-}
-
 .slogan-container {
   margin: 0 15px;
   width: 290px;
@@ -176,4 +161,5 @@ header {
   align-items: center;
   position: relative;
   bottom: 5vh;
+  opacity: 80%;
 }
