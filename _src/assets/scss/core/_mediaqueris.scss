@@ -1,0 +1,70 @@
+@media (min-width: 768px) {
+
+
+    .adalabers__container {
+        display: flex;
+        flex-direction: column;
+        margin: 0px 45px;
+
+    }
+
+
+    .adalabers__profile {
+
+
+        display: flex;
+
+        p,
+        h3 {
+            text-align: left;
+        }
+
+        .redes {
+
+            justify-content: flex-start;
+        }
+
+    }
+
+
+
+
+    .adalabers__profile:nth-child(odd) {
+        flex-direction: row-reverse;
+
+        h3,
+        p,
+        i {
+            text-align: right;
+            padding-right: 0;
+            padding-top: 10px;
+            padding-bottom: 15px;
+            margin-right: 20px;
+        }
+
+        .redes {
+
+            justify-content: flex-end;
+        }
+
+        .redes i {
+
+            margin-right: 20px;
+        }
+
+
+    }
+}
+
+
+@media (min-width: 1000px) {
+
+
+    .adalabers__container {
+
+        margin: 0px 55px;
+
+    }
+
+
+}

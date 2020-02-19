@@ -1,0 +1,115 @@
+.footer {
+  &__box {
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    border-top: 1px #b8b8b9;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    align-items: center;
+    border-top: 1px solid #b8b8b9;
+    position: relative;
+  }
+
+  &__text {
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    color: #b8b8b9;
+    text-decoration: none;
+  }
+
+  &__group {
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    color: #b8b8b9;
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    color: #54585a;
+    margin-bottom: 30px;
+    list-style: none;
+  }
+
+  &__item {
+    &__equipo,
+    &__quienes,
+    &__contacto {
+      font-size: 14px;
+      line-height: 1.43;
+      font-family: "Open Sans", sans-serif;
+      color: #54585a;
+      display: flex;
+      justify-content: center;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+
+    &__image {
+      display: inline-block;
+      width: 115.9px;
+      height: 42px;
+      margin-bottom: 45px;
+    }
+  }
+}
+
+@media all and (min-width: 768px) {
+  .footer {
+    &__box {
+      flex-direction: row;
+    }
+
+    &__list {
+      position: absolute;
+      top: 24px;
+      right: 45px;
+      margin: 0;
+      align-items: flex-end;
+      align-content: space-evenly;
+    }
+
+    &__text {
+      display: flex;
+      justify-content: left;
+      position: relative;
+      left: 45px;
+    }
+
+    &__item {
+      &__equipo,
+      &__quienes,
+      &__contacto {
+        line-height: 30px;
+      }
+    }
+
+    &__image {
+      display: inline;
+      position: absolute;
+      top: 65px;
+      left: 45px;
+      margin: 0;
+      margin-bottom: 60px;
+    }
+  }
+}
+
+@media all and (min-width: 1200px) {
+  .footer {
+    &__text,
+    &__image {
+      margin-left: 138px;
+    }
+
+    &__list {
+      margin-right: 138px;
+    }
+  }
+}
