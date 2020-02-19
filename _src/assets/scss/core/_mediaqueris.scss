@@ -1,13 +1,9 @@
 @media (min-width: 768px) {
-
-
   .adalabers__container {
     display: flex;
     flex-direction: column;
     margin: 0px 45px;
-
   }
-
 
   .adalabers__profile {
     display: flex;
@@ -19,16 +15,13 @@
     }
 
     .redes {
-
       justify-content: flex-start;
     }
 
     img {
-
       width: 278px;
       height: 200px;
     }
-
   }
 
   .adalabers__profile:nth-child(odd) {
@@ -44,28 +37,17 @@
     }
 
     .redes {
-
       justify-content: flex-end;
     }
 
     .redes i {
-
       margin-right: 20px;
     }
-
-
   }
 }
 
-
 @media (min-width: 1000px) {
-
-
   .adalabers__container {
-
     margin: 0px 55px;
-
   }
-
-
 }
