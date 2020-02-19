@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <header>
+      <partial src="_header.html"></partial>
+      <div class="header__hero">
+        <div id="top" class="hero__image"></div>
+      </div>
+    </header>
+    <main class="contact__page__container">
+      <div class=" div__form">
+        <div class="introduction__container">
+          <h2 class="contact" id="conctact-page">Contacto</h2>
+          <p>
+            Para cualquier duda, sugerencia, o contacto con nosotras puedes
+            rellenar el siguiente formulario.
+          </p>
+          <p class="obligatory">
+            Todos los campos marcados con <span>*</span> son obligatorios.
+          </p>
+        </div>
+        <form class="form" action="">
+          <label for="Nombre">Nombre completo <span>*</span> </label>
+          <input
+            type="text"
+            name="nombre"
+            id="nombre"
+            placeholder="Nombre..."
+            required
+          />
+          <div class="div__email__phone">
+            <div class="div__email">
+              <label for="Email">Email <span>*</span></label>
+              <input
+                type="email"
+                name="email"
+                id=""
+                placeholder="nombre.apellidos@mail.com"
+                class="email"
+                required
+              />
+            </div>
+            <div class="div__phone">
+              <label for="Telefono">Teléfono</label>
+              <input
+                type="tel"
+                name="telefono"
+                id="telefono"
+                placeholder="Ej: 123456789"
+              />
+            </div>
+          </div>
+          <label for="Mensaje">Mensaje <span>*</span></label>
+          <textarea
+            name="mensaje"
+            id="mensaje"
+            cols="30"
+            rows="10"
+            placeholder="¿Qué necesitas?"
+            required
+          ></textarea>
+          <div class="div__submit">
+            <input class="submit" type="submit" value="enviar" />
+          </div>
+        </form>
+      </div>
+    </main>
+    <partial src="_footer.html"></partial>
+  </body>
+</html>
