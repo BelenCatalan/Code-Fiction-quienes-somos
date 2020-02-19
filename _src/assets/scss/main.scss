@@ -268,80 +268,6 @@ i {
   display: flex;
   justify-content: center;
 }
-
-/* FOOTER */
-.footer__box {
-  height: 100%;
-  width: 100%;
-  background-color: white;
-  border-top: 1px #b8b8b9;
-  display: flex;
-  flex-direction: column;
-  margin: 0;
-  align-items: center;
-  border-top: 1px solid #b8b8b9;
-  position: relative;
-}
-
-.footer__item__equipo,
-.footer__item__quienes,
-.footer__item__contacto {
-  font-size: 14px;
-  line-height: 1.43;
-  font-family: "Open Sans", sans-serif;
-  color: #54585a;
-  display: flex;
-  justify-content: center;
-  text-decoration: none;
-}
-
-.footer__text {
-  font-family: "Open Sans", sans-serif;
-  font-size: 14px;
-  font-weight: normal;
-  color: #b8b8b9;
-  margin-top: 30px;
-  margin-bottom: 20px;
-}
-
-.footer__text {
-  text-decoration: none;
-}
-
-.footer__logo {
-  width: 115.9px;
-  height: 42px;
-}
-
-.footer__text {
-  font-family: "Open Sans", sans-serif;
-  font-size: 14px;
-  font-weight: normal;
-  color: #b8b8b9;
-  margin-top: 30px;
-  text-decoration: none;
-}
-
-.footer__list {
-  padding: 0;
-  list-style: none;
-  font-size: 14px;
-  line-height: 1.43;
-  font-family: "Open Sans", sans-serif;
-  font-weight: 500;
-  display: flex;
-  flex-direction: column;
-  color: #54585a;
-}
-
-.imagen__logo {
-  display: inline-block;
-  width: 115.9px;
-  height: 42px;
-  margin: 20px;
-  margin-bottom: 45px;
-}
-
 @media all and (min-width: 768px) {
   .header__container {
     display: flex;
@@ -426,29 +352,5 @@ i {
   h2.quienes {
     margin: 30px;
   }
-  .footer__box {
-    display: flex;
-    flex-direction: row;
-  }
-  .footer__list {
-    position: absolute;
-    top: 24px;
-    right: 45px;
-    line-height: 30px;
-    align-items: flex-end;
-  }
-  .footer__text {
-    display: flex;
-    justify-content: left;
-    position: relative;
-    left: 45px;
-  }
-  .imagen__logo {
-    display: inline;
-    position: absolute;
-    top: 65px;
-    left: 45px;
-    margin: 0;
-    margin-bottom: 60px;
-  }
 }
+@import "./core/_footer.scss";
