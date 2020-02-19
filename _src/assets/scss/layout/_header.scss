@@ -127,6 +127,8 @@ header {
   }
 }
 
+// IMAGEN //
+
 .header__hero {
   width: 100%;
   display: flex;
@@ -143,6 +145,8 @@ header {
   background-size: cover;
   background-repeat: no-repeat;
 }
+
+// ESLOGAN //
 
 .slogan-container {
   margin: 0 15px;
@@ -161,4 +165,24 @@ header {
   position: relative;
   bottom: 12vh;
   opacity: 80%;
+}
+
+@media all and (min-width: 768px) {
+  .header__hero {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .slogan-container {
+    margin-left: 46px;
+    bottom: 17vh;
+  }
+}
+
+@media all and (min-width: 1200px) {
+  .slogan-container {
+    margin-left: 138px;
+    bottom: 11vh;
+  }
 }
