@@ -1,58 +1,10 @@
-* {
-  margin: 0px;
-  padding: 0;
-}
+@import 'core/_variables';
+@import 'core/_adalabers';
+@import 'core/_mediaqueris';
+@import 'core/_reset';
+@import 'layout/_header.scss';
+@import 'layout/_footer.scss';
 
-@import "layout/header";
-
-.header__hero {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.hero__image {
-  width: 100%;
-  height: 100vh;
-  background-image: url("../images/codefiction.jpeg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.group__name {
-  height: 80px;
-  width: 80%;
-  background-color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  top: -10vh;
-  font-family: "Open Sans", "semibold", sans-serif;
-  font-size: 18px;
-  color: black;
-  margin: 0 auto;
-}
-
-.slogan-container {
-  margin: 0 15px;
-  width: 290px;
-  height: 80px;
-  box-sizing: border-box;
-  background-color: white;
-  font-family: "Open Sans", "semibold", sans-serif;
-  font-size: 18px;
-  color: black;
-  text-align: center;
-  z-index: 50;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  bottom: 5vh;
-}
 
 .main {
   display: flex;
@@ -67,6 +19,7 @@
 }
 
 .section-equipo {
+  width: 80%;
   background-color: #ffffff;
   font-family: "Rubik", sans-serif;
   font-size: 24px;
@@ -75,14 +28,6 @@
   color: #14d9c4;
   text-align: center;
   margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.equipo-section-title {
-  text-transform: uppercase;
 }
 
 .equipo-p {
@@ -99,11 +44,12 @@
   transform: rotate(45deg);
   position: relative;
   bottom: -15px;
+  left: 50%;
 }
 
 .section-fortaleza {
   /*width: 100%;
-  height: 100%;*/
+	height: 100%;*/
   display: flex;
   flex-direction: column;
   margin: 0 auto;
@@ -138,75 +84,39 @@
   margin: 0px 0px 45px 0px;
 }
 
-.adalabers {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 0 20px;
-}
-
-.quienes {
-  font-family: "Rubik", sans-serif;
-  font-size: 24px;
-  color: #099d8d;
-  display: flex;
-  margin-bottom: 40px;
-  margin-top: 40px;
-}
-
-.profile {
-  margin: 0 0 20px 0;
-}
-
-.profile img {
-  height: 180px;
-  width: 180px;
-  display: flex;
-  flex-direction: column;
-  margin: 0 auto;
-  border: 5px rgb(190, 181, 181) solid;
-  border-radius: 4px;
-}
-
-.profile h3 {
-  font-family: "Open Sans", sans-serif;
-  font-size: 20px;
-  text-align: center;
-}
-
-.profile-description {
-  text-align: center;
-  color: #54585a;
-}
-
-.profile p {
-  font-family: "Open Sans", sans-serif;
-  font-size: 16px;
-  color: #54585a;
-  padding: 0 25px;
-}
-
-.redes ul {
-  margin: 0px;
-  padding: 0px;
-  list-style: none;
-  color: #099d8d;
-  display: flex;
-  justify-content: space-around;
-  width: 124px;
-}
-
-i {
-  color: #099d8d;
-}
-
-.redes {
-  display: flex;
-  justify-content: center;
-}
 @media all and (min-width: 768px) {
+  .header__container {
+    display: flex;
+    justify-content: space-evenly;
+    height: 60px;
+    background: #099d8d;
+    width: 100%;
+  }
+
+  .header__base {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding-left: 45px;
+  }
+
   .hero__image {
     padding-top: 100px;
+  }
+
+  .rectangle {
+    background: #099d8d;
+    height: 100%;
+    margin-right: 30px;
+  }
+
+  .lista {
+    display: flex;
+    align-items: center;
+  }
+
+  .lista li {
+    margin-left: 19px;
   }
 
   .section-fortaleza {
@@ -219,44 +129,4 @@ i {
     flex-basis: 30%;
   }
 
-  .profile {
-    display: flex;
-  }
-
-  .profile:nth-child(odd) {
-    flex-direction: row-reverse;
-  }
-
-  .profile:nth-child(odd) h3,
-  .profile:nth-child(odd) p {
-    text-align: right;
-    padding-right: 0;
-    padding-top: 10px;
-    padding-bottom: 15px;
-    margin-right: 20px;
-  }
-
-  .profile:nth-child(odd) .redes {
-    justify-content: flex-end;
-    margin-right: 20px;
-  }
-
-  .profile h3,
-  .profile p {
-    text-align: left;
-    padding-left: 0;
-    margin-left: 20px;
-    padding-top: 10px;
-    padding-bottom: 15px;
-  }
-
-  .redes {
-    justify-content: flex-start;
-    margin-left: 20px;
-  }
-
-  h2.quienes {
-    margin: 30px;
-  }
 }
-@import "layout/footer";
