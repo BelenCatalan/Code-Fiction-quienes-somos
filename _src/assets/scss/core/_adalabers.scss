@@ -26,6 +26,14 @@
     margin: 0 auto;
     border: 5px rgb(190, 181, 181) solid;
     border-radius: 4px;
+    filter: grayscale(100%);
+    transition: all 0.3s;
+
+    &:hover {
+      filter: grayscale(0%);
+      transform: scale(1.1);
+    }
+
   }
 
   h3 {
