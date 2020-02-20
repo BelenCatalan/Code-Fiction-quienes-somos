@@ -1,10 +1,11 @@
-@import "core/_variables";
+@import "core/_settings.scss";
 @import "core/_adalabers";
 @import "core/_mediaqueris";
 @import "core/_reset";
 @import "layout/_header.scss";
 @import "layout/_footer.scss";
 @import "core/_strengths";
+@import "core/form";
 
 .main {
   display: flex;
