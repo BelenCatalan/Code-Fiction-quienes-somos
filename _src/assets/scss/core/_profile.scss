@@ -18,7 +18,7 @@
 .adalabers__profile {
   margin: 0 0 20px 0;
 
-  img {
+  &__img {
     height: 180px;
     width: 180px;
     display: flex;
@@ -36,19 +36,19 @@
 
   }
 
-  h3 {
+  &__name {
     font-family: $fontfamilyprofile;
     font-size: 20px;
     text-align: center;
   }
 
-  p {
+  &__description__bio {
     font-family: $fontfamilyprofile;
     font-size: 16px;
     color: $grey;
   }
 
-  &-description {
+  &__description {
     text-align: center;
     color: $grey;
   }
