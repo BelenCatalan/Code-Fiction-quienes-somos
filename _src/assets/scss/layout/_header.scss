@@ -24,6 +24,19 @@ header {
     & a {
       text-decoration: none;
       color: #fff;
+      animation-name: big;
+      animation-duration: 1.5s;
+      animation-iteration-count: infinite;
+      &:hover {
+        @-webkit-keyframes big {
+          from {
+            transform: scale(1.5);
+          }
+          to {
+            text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #54585a, 0 0 35px #54585a, 0 0 40px #54585a, 0 0 50px #54585a, 0 0 75px #54585a;
+          }
+        }
+      }
     }
   }
 
@@ -48,6 +61,11 @@ header {
   &--link {
     text-decoration: none;
     color: #ffffff;
+
+    &:hover {
+      color: #54585a;
+      font-weight: bolder;
+    }
   }
 }
 
