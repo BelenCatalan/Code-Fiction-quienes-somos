@@ -1,147 +1,72 @@
-header {
-  width: 100%;
-  height: 100%;
+@import "layout/_header.scss";
+@import "layout/_footer.scss";
+
+.introduction__container p {
+  font-family: $fontfamilyprofile;
+  margin-bottom: 25px;
 }
 
-.header__container {
-  position: fixed;
-  width: 100%;
-  z-index: 3;
-  opacity: 0.8;
-
-  &__base {
-    width: 100%;
-    height: 60px;
-    opacity: 0.5;
-    background-color: #099d8d;
-    text-transform: uppercase;
-    font-family: "Rubik", sans-serif;
-    font-size: 16px;
-    color: #fff;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    z-index: 10;
-
-    & a {
-      text-decoration: none;
-      color: #fff;
-    }
-  }
-
-  &__rectangle {
-    width: 100%;
-    height: 45px;
-    opacity: 0.9;
-    background-color: #14d9c4;
-    font-family: "Rubik", sans-serif;
-    font-size: 15px;
-    text-transform: uppercase;
-  }
+.contact {
+  color: #099d8d;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: $fontfamilytitle;
+  font-weight: bold;
+  margin-bottom: 15px;
 }
 
-.header__list {
-  list-style: none;
-  height: 100%;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-
-  &--link {
-    text-decoration: none;
-    color: #ffffff;
-  }
+.obligatory {
+  font-size: 10px;
 }
 
-/*MEDIAQUERIES TABLET HEADER*/
-@media all and (min-width: 768px) {
-  .header__container {
-    display: flex;
-    justify-content: space-evenly;
-    height: 60px;
-    background: #099d8d;
-    width: 100%;
-
-    &__base {
-      display: flex;
-      flex-direction: row;
-      justify-content: flex-start;
-      margin-left: 45px;
-    }
-
-    &__rectangle {
-      background: #099d8d;
-      height: 100%;
-      margin-right: 30px;
-    }
-  }
+.div__form {
+  margin: 20px;
 }
 
-@media all and (min-width: 768px) {
-  .header__list {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-
-    &--link {
-      margin-left: 19px;
-    }
-  }
-}
-
-/*MEDIAQUERIES DESKTOP HEADER*/
-@media all and (min-width: 1200px) {
-  .header__container {
-    display: flex;
-    justify-content: space-evenly;
-    height: 60px;
-    background: #099d8d;
-    width: 100%;
-
-    &__base {
-      display: flex;
-      flex-direction: row;
-      justify-content: flex-start;
-      margin-left: 142px;
-      width: 50%;
-    }
-
-    &__rectangle {
-      background: #099d8d;
-      height: 100%;
-      width: 50%;
-      margin-right: 138px;
-    }
-  }
-}
-
-@media all and (min-width: 1200px) {
-  .header__list {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-  }
-}
-
-.header__hero {
+.form {
   width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  font-family: "Open Sans", sans-serif;
+
+  input,
+  label {
+    margin-bottom: 10px;
+    padding: 8px;
+  }
 }
 
-.hero__image {
+.div__form {
+  display: flex;
+  flex-direction: column;
+}
+
+.div__email__phone input {
   width: 100%;
-  height: 100vh;
-  background-image: url("../images/codefiction.jpeg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
+}
+
+textarea {
+  font-family: $fontfamilyprofile;
+  margin-bottom: 30px;
+}
+
+span {
+  color: $light-blue;
+}
+
+.submit {
+  height: 45px;
+  margin-top: 20px;
+  font-family: $fontfamilyprofile;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 4px;
+  background-color: $blue;
+  color: #fff;
 }
 
 // MEDIA QUERIES FORM TABLET//
+
 @media all and (min-width: 768px) {
   .contact__page__container {
     display: flex;
@@ -203,141 +128,4 @@ header {
   .div__email input {
     width: 337px;
   }
-}
-
-// FOOTER //
-
-.footer__box {
-  height: 100%;
-  width: 100%;
-  background-color: white;
-  border-top: 1px #b8b8b9;
-  display: flex;
-  flex-direction: column;
-  margin: 0;
-  align-items: center;
-  border-top: 1px solid #b8b8b9;
-  position: relative;
-}
-
-.footer__item__equipo,
-.footer__item__quienes,
-.footer__item__contacto {
-  font-size: 14px;
-  line-height: 1.43;
-  font-family: "Open Sans", sans-serif;
-  color: #54585a;
-  display: flex;
-  justify-content: center;
-  text-decoration: none;
-}
-
-.footer__text {
-  font-family: "Open Sans", sans-serif;
-  font-size: 14px;
-  font-weight: normal;
-  color: #b8b8b9;
-  margin-top: 30px;
-  margin-bottom: 20px;
-}
-
-.footer__text {
-  text-decoration: none;
-}
-
-.footer__logo {
-  width: 115.9px;
-  height: 42px;
-}
-
-.footer__text {
-  font-family: "Open Sans", sans-serif;
-  font-size: 14px;
-  font-weight: normal;
-  color: #b8b8b9;
-  margin-top: 30px;
-  text-decoration: none;
-}
-
-.footer__list {
-  padding: 0;
-  list-style: none;
-  font-size: 14px;
-  line-height: 1.43;
-  font-family: "Open Sans", sans-serif;
-  font-weight: 500;
-  display: flex;
-  flex-direction: column;
-  color: #54585a;
-}
-
-.imagen__logo {
-  display: inline-block;
-  width: 115.9px;
-  height: 42px;
-  margin: 20px;
-  margin-bottom: 45px;
-}
-
-.introduction__container p {
-  margin-bottom: 25px;
-}
-
-.contact {
-  color: #099d8d;
-  text-transform: uppercase;
-  text-align: center;
-  font-family: "Open Sans", sans-serif;
-  font-weight: bold;
-  margin-bottom: 15px;
-}
-
-.obligatory {
-  font-size: 10px;
-}
-
-.div__form {
-  margin: 20px;
-}
-
-.form {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  font-family: "Open Sans", sans-serif;
-
-  input,
-  label {
-    margin-bottom: 10px;
-    padding: 8px;
-  }
-}
-
-.div__form {
-  display: flex;
-  flex-direction: column;
-}
-
-.div__email__phone input {
-  width: 100%;
-}
-
-textarea {
-  margin-bottom: 30px;
-}
-
-span {
-  color: #14d9c4;
-}
-
-.submit {
-  height: 45px;
-  margin-top: 20px;
-  text-transform: uppercase;
-  border: none;
-  border-radius: 4px;
-  background-color: #099d8d;
-  color: #fff;
-  font-family: "Open Sans", sans-serif;
-  width: 100%;
 }

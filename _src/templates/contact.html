@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />
+
     <link rel="stylesheet" href="./assets/css/main.css" />
     <title>Página Cntanto</title>
   </head>
@@ -22,12 +23,13 @@
           <p>Si tienes una duda, una sugerencia, o simplemente quieres contactarnos, puedes hacerlo rellenando este formulario.</p>
           <p class="obligatory">Todos los campos marcados con <span>*</span> son obligatorios.</p>
         </div>
-        <form class="form" action="">
+        <form class="form" action="https://formspree.io/xyywrjzj" method="POST">
           <label for="Nombre">Nombre completo <span>*</span> </label>
           <input type="text" name="nombre" id="nombre" placeholder="Nombre..." required />
           <div class="div__email__phone">
             <div class="div__email">
-              <label for="Email">Email <span>*</span></label> <input type="email" name="email" id="" placeholder="nombre.apellidos@mail.com" class="email" required />
+              <label for="Email">Email <span>*</span></label>
+              <input type="email" name="email" id="" placeholder="nombre.apellidos@mail.com" class="email" required value="mariajose1907@gmail.com" />
             </div>
             <div class="div__phone">
               <label for="Telefono">Teléfono</label>
@@ -42,5 +44,6 @@
         </form>
       </div>
     </main>
+    <partial src="_footer.html"></partial>
   </body>
 </html>

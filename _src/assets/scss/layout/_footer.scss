@@ -38,6 +38,7 @@
   }
 
   &__item {
+
     &__equipo,
     &__quienes,
     &__contacto {
@@ -60,6 +61,10 @@
   }
 }
 
+.lista__equipo {
+  margin: 0px;
+}
+
 @media all and (min-width: 768px) {
   .footer {
     &__box {
@@ -80,13 +85,18 @@
       justify-content: left;
       position: relative;
       left: 45px;
+      margin-top: 0;
+
+
     }
 
     &__item {
+
       &__equipo,
       &__quienes,
       &__contacto {
         line-height: 30px;
+        margin: 0px;
       }
     }
 
@@ -103,6 +113,7 @@
 
 @media all and (min-width: 1200px) {
   .footer {
+
     &__text,
     &__image {
       margin-left: 138px;
