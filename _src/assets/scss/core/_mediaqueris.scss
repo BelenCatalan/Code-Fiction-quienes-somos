@@ -8,17 +8,22 @@
   .adalabers__profile {
     display: flex;
 
-    p,
-    h3 {
+
+    &__name {
       text-align: left;
       padding-bottom: 5px;
+    }
+
+    &__description__bio {
+      text-align: left;
+      padding-bottom: 5px
     }
 
     .redes {
       justify-content: flex-start;
     }
 
-    img {
+    &__img {
       width: 278px;
       height: 200px;
     }
@@ -27,13 +32,26 @@
   .adalabers__profile:nth-child(odd) {
     flex-direction: row-reverse;
 
-    h3,
-    p,
     li {
       text-align: right;
       padding-right: 0;
       padding-top: 10px;
+      margin-right: 0px
+    }
+
+    .adalabers__profile__name {
+      text-align: right;
+      padding-right: 0;
+      padding-top: 10px;
       margin-right: 0px;
+    }
+
+    .adalabers__profile__description__bio {
+      text-align: right;
+      padding-right: 0;
+      padding-top: 10px;
+      margin-right: 0px;
+
     }
 
     .redes {
@@ -46,7 +64,7 @@
   }
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 1200px) {
   .adalabers__container {
     margin: 0px 138px;
   }
